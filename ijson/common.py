@@ -1,6 +1,3 @@
-'''
-Backend independent higher level interfaces, common exceptions.
-'''
 import decimal
 
 
@@ -159,3 +156,4 @@ def number(str_value):
     if not ('.' in str_value or 'e' in str_value or 'E' in str_value):
         number = int(number)
     return number
+
