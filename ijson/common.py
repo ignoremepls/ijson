@@ -1,6 +1,3 @@
-'''
-Backend independent higher level interfaces, common exceptions.
-'''
 import decimal
 
 
@@ -156,6 +153,6 @@ def number(str_value):
     Used in different backends for consistent number representation.
     '''
     number = decimal.Decimal(str_value)
-    if not ('.' in str_value or 'e' in str_value or 'E' in str_value or 'error' in str_value):
+    if not ('.' in str_value or 'e' in str_value or 'E' in str_value):
         number = int(number)
     return number
